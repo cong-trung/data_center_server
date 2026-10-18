@@ -1,0 +1,14 @@
+[project]
+name = "data-center-server"
+version = "0.1.0"
+description = "FastAPI service that processes uploaded CSV/Excel files with Polars"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]>=0.143.3",
+    "polars[calamine,gpu,pyarrow,xlsxwriter]>=1.44.2",
+    "pydantic-settings>=2.16.0",
+]
+
+[tool.fastapi]
+entrypoint = "app.main:app"

@@ -1,0 +1,7 @@
+# Allow-list: the image only needs the lockfile, project metadata and the app package.
+*
+!pyproject.toml
+!uv.lock
+!app
+**/__pycache__
+**/*.py[oc]
